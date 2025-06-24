@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Carousel with Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <style>
+    /* Center the carousel and add padding */
+.carousel {
+    margin-top: 30px;
+}
+
+/* Adjust card spacing */
+.carousel .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel .card:hover {
+    transform: scale(.9);
+}
+
+/* Ensure images fit well */
+.carousel .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    height: 200px; /* Set a fixed height for images */
+}
+
+/* Space between cards */
+.carousel .row {
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Carousel controls styling */
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(100%);
+    width: 5%;
+}
+
+/* Optional: Hide carousel controls on small screens */
+@media (max-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+   
+}
+.nar{
+      height: 40px;
+      width: 260px;
+      padding-left: 50px;
+      margin-top: 25px;
+    }
+    .opo{
+        height: 30px;
+        width: 220px;
+        padding-left: 20px;
+        margin-top: 25px;
+    }
+    .ls2{
+        height: 30px;
+        width: 220px;
+        padding-left: 20px;
+        margin-top: 25px;
+        transform: rotateX(10deg);
+    }
+    .bolt{
+        height: 30px;
+        width: 220px;
+        padding-left: 20px;
+        margin-top: 25px;
+        /* transform: rotateY(-40deg); */
+        /* background-color: grey; */
+    }
+    .dull{
+        height: 30px;
+        width: 220px;
+        padding-left: 20px;
+        margin-top: 25px;
+        transform: rotateY(20deg);
+        /* background-color: grey; */
+        
+    }
+    
+  </style>
+
+<div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+        <!-- First Slide -->
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="nar" src="NAR1.jpg" class="card-img-top" alt="Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">D1 DECOR RED</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="opo" src="titan carbon razor.webp" class="card-img-top" alt="Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">TITAN CARBON RAZOR</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="HUMMER8.jpg" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">HUMMER8</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Slide -->
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="ls2" src="APEX HUNTER.webp" class="card-img-top" alt="Image 4">
+                        <div class="card-body">
+                            <h5 class="card-title">APEX HUNTER</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="bolt" src="LS2 FF320 BOLT.webp" class="card-img-top" alt="Image 5">
+                        <div class="card-body">
+                            <h5 class="card-title">LS2 FF320</h5>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="dull" src="TURBINE DULL GREY.webp" class="card-img-top" alt="Image 6">
+                        <div class="card-body">
+                            <h5 class="card-title">TURBINE DULL GREY</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+  
+   
+                    
